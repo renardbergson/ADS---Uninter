@@ -1,5 +1,5 @@
 def imprime_com_condicao (num, funCond):
-  if funCond (num): # se a verificação que está dentro de "par" for verdade, mostre o número
+  if funCond (num): # se a as funções "par" ou "impar" retornarem True, mostre o número
     print(num)
 
 def par (x):
