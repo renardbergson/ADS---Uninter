@@ -6,7 +6,7 @@
 
 def soma (*num):
   soma = 0
-  print('Tupla: {}' .format(num))
+  print('Tupla: {}' .format(num)) # neste caso, a tupla ~e criada automaticamente
   for i in num:
     soma += i
   return soma
