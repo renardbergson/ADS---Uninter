@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_1/Pratica/IMC/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_1/Pratica/Leonidas/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_1/Pratica/Reverso/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_1/Teoria/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Pratica/01-avaliacao/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Pratica/02-avaliacao_02/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Pratica/03-banco/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Teoria/01-classes_e_atributos/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Teoria/02-metodos/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Teoria/03_padroes_e_o_modificador_static/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Teoria/04-interacao_entre_objetos/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_2/Teoria/05-construtores/src"/>
+	<classpathentry kind="src" path="Programacao_Orientada_a_Objetos/Aula_3/Teoria/01-visibilidade/src"/>
+	<classpathentry kind="output" path="Programacao_Orientada_a_Objetos/Aula_1/Pratica/IMC/bin"/>
+</classpath>
