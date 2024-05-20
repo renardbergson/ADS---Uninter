@@ -30,7 +30,7 @@ import java.util.Locale;
 
 public class App {
     public static void main(String[] args) throws Exception {
-         Cofrinho cofre = new Cofrinho();
+        Cofrinho cofre = new Cofrinho();
 
         cofre.adicionar(new Moeda("Real", 2.50));
         cofre.adicionar(new Moeda("Euro", 25));
