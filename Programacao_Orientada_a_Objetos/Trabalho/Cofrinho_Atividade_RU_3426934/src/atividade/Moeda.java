@@ -1,8 +1,5 @@
 package atividade;
 
-import java.text.NumberFormat;
-import java.util.Locale;
-
 public abstract class Moeda {
 	String tipo;
     double valor;
@@ -12,27 +9,17 @@ public abstract class Moeda {
     }
 
     public void info () {
-        System.out.println();
-
-        @SuppressWarnings("deprecation")
-        Locale localBrasil = new Locale("pt", "BR");
-        String valorEmReal = NumberFormat.getCurrencyInstance(localBrasil).format(this.valor);
-        
-        Locale localUsa = Locale.US;
-        String valorEmDolar = NumberFormat.getCurrencyInstance(localUsa).format(this.valor);                
-        
-        Locale localEuropa = Locale.FRANCE;
-        String valorEmEuro = NumberFormat.getCurrencyInstance(localEuropa).format(this.valor);                
+        System.out.println();              
 
         switch (this.tipo) {
             case "Real":
-                System.out.println("+ Depósito da moeda " + "'" + this.tipo + "'" + ", de valor " + "'" + valorEmReal + "'" + " inserido no cofrinho");
+                System.out.println("+ Depósito da moeda " + "'" + this.tipo + "'" + ", de valor " + "'" + Cofrinho.converter("Real", this.valor) + "'" + " inserido no cofrinho");
                 break;
             case "Dólar":
-                System.out.println("+ Depósito da moeda " + "'" + this.tipo + "'" + ", de valor " + "'" + valorEmDolar + "'" + " inserido no cofrinho");
+                System.out.println("+ Depósito da moeda " + "'" + this.tipo + "'" + ", de valor " + "'" + Cofrinho.converter("Dólar", this.valor) + "'" + " inserido no cofrinho");
                 break;
             case "Euro":
-                System.out.println("+ Depósito da moeda " + "'" + this.tipo + "'" + ", de valor " + "'" + valorEmEuro + "'" + " inserido no cofrinho");
+                System.out.println("+ Depósito da moeda " + "'" + this.tipo + "'" + ", de valor " + "'" + Cofrinho.converter("Euro", this.valor) + "'" + " inserido no cofrinho");
                 break;
             default:
                 break;

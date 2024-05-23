@@ -213,7 +213,8 @@ public class Cofrinho {
         return true;
     }
 
-    private String converter (String tipo, double valor) {
+    public static String converter (String tipo, double valor) {
+    	// "static", para que seja possível chamar este médodo sem instanciar a Classe
         @SuppressWarnings("deprecation")
         Locale localBrasil = new Locale("pt", "BR");
         Locale localUsa = Locale.US;
