@@ -9,7 +9,7 @@ import java.util.Locale;
 public class Cofrinho {
 	private ArrayList<Moeda> listaMoedas = new ArrayList<Moeda>();
 
-    public void menu () {
+    public void menu () throws Exception {
         Scanner teclado = new Scanner(System.in);
         
         while (true) {
@@ -109,13 +109,13 @@ public class Cofrinho {
         }
     }
 
-    public void adicionar (Moeda moeda) {
+    public void adicionar (Moeda moeda) throws Exception {
         listaMoedas.add(moeda);
         moeda.info();
         this.menu(); // menu principal
     }
 
-    public void listarMoedas () {
+    public void listarMoedas () throws Exception {
         System.out.println();
         System.out.println("------------------");
         System.out.println("Depósitos no cofre");
@@ -143,7 +143,7 @@ public class Cofrinho {
         this.menu(); // menu principal
     }
 
-    public void remover (Scanner teclado) {        
+    public void remover (Scanner teclado) throws Exception {        
         while (true) {
             // menu escolha de moeda
             System.out.println();
@@ -239,7 +239,7 @@ public class Cofrinho {
         return valorConvertido;
     }
 
-    public void totalConvertido () {
+    public void totalConvertido () throws Exception {
         double total = 0;
 
         Iterator<Moeda> item = listaMoedas.iterator();
