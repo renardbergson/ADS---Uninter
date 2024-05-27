@@ -3,7 +3,7 @@ package atividade;
 public class Real extends Moeda {
 	public Real (double valor) {
         super(valor);
-        this.tipo = "Real";
+        this.tipo = Tipo.Real;
     }
 
     @Override

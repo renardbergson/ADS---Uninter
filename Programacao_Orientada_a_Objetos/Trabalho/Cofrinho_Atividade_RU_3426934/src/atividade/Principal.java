@@ -19,7 +19,7 @@ public class Principal {
 		}
 		finally {
 			System.out.println();
-			System.out.println("Finalizando programa...");
+			System.out.println("Programa Encerrado!");
 		}
 	}
 	

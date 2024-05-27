@@ -3,7 +3,7 @@ package atividade;
 public class Dolar extends Moeda {
 	public Dolar (double valor) {
         super(valor);
-        this.tipo = "Dólar";
+        this.tipo = Tipo.Dólar;
     }
 
     @Override
