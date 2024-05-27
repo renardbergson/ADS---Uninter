@@ -143,8 +143,17 @@ public class Cofrinho {
 	}
 
 	public void remover(Scanner teclado) throws Exception {
+		// cofre vazio
+		if (listaMoedas.size() == 0) {
+			System.out.println();
+			System.out.println("Ainda não há depósitos no cofre!");
+			System.out.println();
+			menu();
+			return;
+		}
+
+		// menu escolha de moeda
 		while (true) {
-			// menu escolha de moeda
 			System.out.println();
 			System.out.println("De qual tipo de moeda deseja remover?");
 			System.out.println("1 - Real");
@@ -186,16 +195,13 @@ public class Cofrinho {
 				break;
 			}
 
-			System.out.println();
-			System.out.println("- Se havia algum depósito do valor informado, ele foi removido!");
-			System.out.println();
-
 			this.menu(); // menu principal
 			break; // sair do loop
 		}
 	}
 
 	private boolean remocao(Tipo tipo, double valor) {
+		boolean remocao = false;
 		int contador = 1;
 
 		Iterator<Moeda> item = listaMoedas.iterator();
@@ -205,11 +211,22 @@ public class Cofrinho {
 
 			if (alvo.tipo == tipo && alvo.valor == valor) {
 				item.remove();
-				contador++; // remover um depósito de cada vez
+				contador++; // remover um de cada vez
+				
+				// Depósito removido
+				System.out.println();
+				System.out.println("- Depósito removido com sucesso!");
+				System.out.println();
+				return remocao = true;
 			}
-		}
 
-		return true;
+			// Depósito não encontrado
+			System.out.println();
+			System.out.println("Nenhum depósito do tipo " + "'" + tipo + "'" + " de valor " + "'" + Cofrinho.converter(tipo, valor) + "'" + " foi encontrado!");
+			System.out.println();
+		}
+		
+		return remocao;
 	}
 
 	public static String converter(Tipo tipo, double valor) {
